@@ -1,1 +1,2 @@
-web: lein ring server-headless
+web: bin/boot
+worker: lein ring server-headless
