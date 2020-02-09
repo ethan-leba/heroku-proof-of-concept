@@ -1,1 +1,1 @@
-worker: lein ring server-headless
+worker: lein ring server
