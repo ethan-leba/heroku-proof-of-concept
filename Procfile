@@ -1,1 +1,1 @@
-web: cd backend-api && lien ring server-headless
+web: lien ring server-headless
