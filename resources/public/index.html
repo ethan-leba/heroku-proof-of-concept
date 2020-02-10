@@ -16,7 +16,7 @@
         message: "waiting"
       }
     })
-    fetch("https://serene-lake-86067.herokuapp.com/api/").then(response => { app.message = response })
+    fetch("https://serene-lake-86067.herokuapp.com/api/").then(response => { app.message = response.text() })
   </script>
 </body>
 </html>
