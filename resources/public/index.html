@@ -1,1 +1,23 @@
-Hello there
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: "waiting"
+      }
+    })
+    fetch("https://serene-lake-86067.herokuapp.com/api/").then(response => { app.message = response })
+  </script>
+</body>
+</html>
+
